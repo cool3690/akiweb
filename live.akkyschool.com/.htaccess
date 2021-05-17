@@ -1,0 +1,65 @@
+RewriteEngine On 
+RewriteCond %{HTTPS} !on 
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$ 
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$ 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^首頁?$ index.php
+
+RewriteRule ^日語補習班?$ cram_index.php
+RewriteRule ^教師團隊?$ cram_teacher.php
+RewriteRule ^環境介紹?$ cram_environment.php
+RewriteRule ^大事記要?$ news_select.php
+RewriteRule ^學員活動?$ cram_activity.php
+RewriteRule ^學員活動剪影?$ cram_activity_pic.php
+RewriteRule ^代辦留學?$ cram_study_abroad.php
+RewriteRule ^合作企業?$ cram_cooperation.php
+RewriteRule ^藝文特區?$ cram_cultural.php
+
+RewriteRule ^註冊帳號?$ member_registered.php
+RewriteRule ^會員資料?$ member_select.php
+RewriteRule ^會員列表?$ admin/member_list.php
+RewriteRule ^登入會員?$ login.php
+RewriteRule ^登出?$ logout.php
+
+RewriteRule ^聯絡我們?$ contact.php
+RewriteRule ^查詢問題單?$ admin/contact_select.php
+
+RewriteRule ^平假名?$ exam_50h.php
+RewriteRule ^片假名?$ exam_50k.php
+RewriteRule ^初級一練習?$ exam_novice1.php
+RewriteRule ^初級二練習?$ exam_novice2.php
+RewriteRule ^初級練習?$ exam_mcq.php
+RewriteRule ^重組句子?$ exam_reorganize_index.php
+RewriteRule ^句子重組?$ exam_reorganize.php
+
+RewriteRule ^多選題登錄?$ admin/exam_mcq_insert.php
+RewriteRule ^多選題編輯?$ admin/exam_mcq_list.php
+RewriteRule ^重組登錄?$ admin/exam_reorganize_insert.php
+RewriteRule ^重組編輯?$ admin/exam_reorganize_list.php
+
+RewriteRule ^商品列表?$ goods_select.php
+RewriteRule ^商品登錄?$ admin/goods_insert.php
+RewriteRule ^商品購物車?$ goods_cart.php
+RewriteRule ^商品編輯?$ admin/goods_list.php
+RewriteRule ^商品訂單?$ goods_order.php
+RewriteRule ^管理訂單?$ admin/goods_admin_order.php
+RewriteRule ^商品追蹤中?$ goods_track.php
+RewriteRule ^商品資訊?$ goods_information.php
+
+RewriteRule ^課程列表?$ course_select.php
+RewriteRule ^課程登錄?$ admin/course_insert.php
+RewriteRule ^已選課程資料?$ course_cart.php
+RewriteRule ^課程編輯?$ admin/course_list.php
+RewriteRule ^課程訂單查詢?$ course_order.php
+
+RewriteRule ^消息列表?$ news_select.php
+RewriteRule ^消息登錄?$ admin/news_insert.php
+RewriteRule ^消息編輯?$ admin/news_list.php
+RewriteRule ^佈告欄編輯?$ admin/news_handbill.php
+
+RewriteRule ^開啟直播?$ admin/live_admin.php
+RewriteRule ^直播觀看?$ live_user.php
+RewriteRule ^上課時數?$ admin/live_select.php
+
+RewriteRule ^後台管理?$ admin/backstage.php
+RewriteRule ^權限管理?$ admin/permission.php

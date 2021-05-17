@@ -1,0 +1,775 @@
+@charset 'utf-8';
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+	font-family:'Noto Sans TC';
+}
+
+/*navbar*/
+.navbar {		
+	margin-bottom: 0;
+	border: 0;
+	font-size: 18px !important;
+	letter-spacing: 3px;
+	opacity:1;
+	font-weight:bold;
+ }
+#dropdown{
+	color: #000000;
+	font-size:18px !important;
+	width:130px;
+	text-align:center;
+}	
+/*navbar文字顏色*/ 
+#navbardrop{
+	color: #000000;
+	font-size:18px !important;
+	width:130px;
+	text-align:center;
+}
+ 
+/*navbar文字顏色*/ 
+#navbardrop2{
+	color: #ffffff !important; 	
+}
+
+/* .nav-link:hover{ */
+	/* color:#5B5B5B  !important; */
+/* } */
+/* 滑鼠移至navbar自動底線效果 */
+
+#navbardrop::after {
+    content: '';
+    display: block;
+    width: 0;
+    height:3px;
+    background: #DC6D4E;
+    transition: width 1s;
+}
+
+#navbardrop:hover::after {
+    width: 100%;
+    transition: width 1s;
+}
+
+/* 滑鼠移至navbar自動展開 */
+.dropdown .dropdown-menu {
+	margin: 0; 
+	padding: 0;
+	border:0;
+	border-radius: 0px 0px 0px 0px;
+}
+
+
+.dropdown-menu > a{
+    background-color:#FFF7FB;
+	color:#ffffff; 
+	font-weight:bold;
+	width:160px !important;
+}
+
+/* 滑鼠移動到下拉式選單背景顏色、文字顏色效果 */
+.dropdown-menu > a:hover{
+    background-color:#FFF4C1;
+	color:#5B5B5B !important;
+    opacity: 0.9;
+}
+.dropdown-item{
+	height:40px;	
+}
+/* navbar手機模式三槓設定  */
+.navbar-toggler{
+	background-color:#660000;
+}
+
+/* 去超連結底線 */
+.container a{
+    text-decoration:none;	
+}
+#marquee_div{
+	padding-left:20px;
+	font-size:14px; 
+	margin-top:46px; 
+	line-height:20px;
+    z-index:3;
+}
+
+#top_bg{
+	background-image: url("images/background.png");
+	
+}
+
+/* #footer_img{ */
+    /* position:absolute; */
+    /* top:135%; */
+    /* z-index:-1; */
+/* } */
+#news_marq{
+	position:absolute;
+	padding-left:45%;     
+	width:100%;
+    z-index:1;
+	
+}
+#navbar_member{
+	font-size:14px;
+	letter-spacing:3px;
+	color:#730101;
+}
+#navbar_admin{
+	font-size:18px;
+	letter-spacing:3px;
+}
+/* #navbar_admin:hover{ */
+	/* color:#FFE66F; */
+/* } */
+#top_a, #navbar_goods, #navbar_name{
+    text-decoration:none;
+}
+#login_input{
+	border-color:#F8E2DC;
+}
+/* 右側消息：滑鼠移至消息列背景顏色綠色、文字白色、對應的圖片透明度0.5 */
+#p1_ds{ 
+	width: 340px;
+	height:350px;
+	background: -webkit-linear-gradient(315deg,#ffffff,#fffcec);
+	background: -o-linear-gradient(315deg,#ffffff,#fffcec);
+	background: -moz-linear-gradient(315deg,#ffffff,#fffcec);
+	background: linear-gradient(to 315deg,#ffffff,#fffcec);
+	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+/* 右側消息：滑鼠移至消息列背景顏色綠色、文字白色、對應的圖片透明度0.5 */
+#p1_ds2{ 
+	width: 340px;
+	height:340px;
+	background: -webkit-linear-gradient(315deg,#ffffff,#fffcec);
+	background: -o-linear-gradient(315deg,#ffffff,#fffcec);
+	background: -moz-linear-gradient(315deg,#ffffff,#fffcec);
+	background: linear-gradient(to 315deg,#ffffff,#fffcec);
+	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+
+.coures_select_alert{
+	line-height:30px;
+	letter-spacing:5px;
+}
+
+.backstage_border{
+	border-bottom:2px dashed #97CBFF;
+}
+.nav_width{
+	width:130px;
+}
+
+#cram_date{
+	font-weight:bold;
+	font-size:18px;
+}
+.pagination>li.active>a {
+	background-color: orange !important;
+}
+.backstage_title{
+	border-left:5px solid #FFBBBB;
+	padding-left:20px;
+	font-weight:bold;
+	text-align:center;
+}
+@media (min-width: 0px) and (max-width: 1000px) { 
+	#logiin1{
+		display: none;
+	}
+	#top_text{
+		display: none;
+	}
+	#main{
+		margin-top:240px;
+	}
+	#main_item{
+		padding-left:50px;
+		padding-right:50px;
+	}
+	/* #footer0{ */
+		/* margin-top:100px; */
+	/* } */
+	#footer0_bg{
+		height:300px;
+		background-color:#F8E2DC;
+		border-bottom: 10px solid #DC6D4E;
+	}
+	#footer1{
+		height:260px;
+		background-color:#fff3e3;
+	}
+	#footer1_img{
+		display: none;
+	}
+	#footer1_text_max{
+		display: none;
+	}
+	#marquee_height{
+		height:250px;
+	}
+	#marquee1{
+		position:absolute;
+		z-index:-3;
+		left:0;
+		width:100%;
+	}
+	#marquee2{
+		position:absolute;
+		z-index:0;
+		padding-top:150px;
+		left:0;
+	}
+	#marquee3{
+		position:absolute;
+		z-index:3;
+		padding-top:200px;
+		left:20px;
+	}
+	#marquee4{
+		display: none;
+	}
+	#study_abroad_img{
+		width:100%;
+	}	
+	#study_abroad_max{
+		display: none;
+	}
+	#coures_order_max{
+		display: none;
+	}
+	#logo_index{
+		width:100%;
+	}
+	#layer1_1{
+		display: none;
+	}
+	#layer1_2{
+		position:absolute;
+		z-index:3;
+		left:0;
+		width:100%;
+	}
+	#layer2_1{
+		opacity: 0.5;
+		position:absolute;
+		padding-top:50px;
+		z-index:1;
+		left:0;
+		width:100%;
+	}
+	#layer3_1{
+		position:absolute;
+		padding-top:150px;
+		z-index:-3;
+		left:0;
+		width:100%;
+	}
+	#login_index{
+		padding-top:3%;
+		padding-bottom:7%;
+	}
+	#cram_left_news{
+		position:absolute;
+		left:13%;
+		top:10%;
+	}
+	#abroad_logo{
+		width:90%;
+		padding-left:50px;
+	}
+	#abroad_video{
+		width:100%;
+	}
+	#cultural_text{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	#cultural_title{
+		width:80px;
+	}
+	#abroad_room_img{
+		width:90%;
+	}
+	#exam_banner{
+		display: none;
+	}
+	.max{
+		display: none;
+	}
+	.leavet_form{
+		display: none;
+	}
+	#backstage{
+		margin-left:50px;
+		margin-right:50px;
+		letter-spacing:3px;
+		line-height:30px;
+	}
+	#cram_right{
+		margin-left:40px;
+		margin-top:50px;
+	}
+	#study_abroad_h-mahoroba_title{
+		font-size:26px;
+		font-weight:bold;
+	}
+	
+	#study_abroad_h-mahoroba_context{
+		margin-top:200px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	#study_abroad_h-mahoroba_text{
+		line-height:40px;
+		margin-left:20px;
+	}
+	#study_abroad_h-mahoroba_case{
+		padding-left:30px;
+	}
+	#study_abroad_h-mahoroba_remarks{
+		padding-left:20px;
+	}
+	#study_abroad_a-j-academy_context{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	#study_abroad_FJIS_logo{
+		width:80%;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1600px) { 
+
+/* 滑鼠移至navbar自動展開 */
+
+	#logiin2{
+		display: none;
+	}
+	#main{
+		padding-left:200px;
+		padding-right:200px;
+		margin-top:640px;
+	}
+	#main_item{
+		padding-top:120px;
+		padding-left:100px;
+		padding-right:100px;
+	}	
+	/* #footer0{ */
+		/* margin-top:139px; */
+	/* } */
+	#footer0_bg{
+		height:194px;
+		background-color:#F8E2DC;
+		border-bottom: 10px solid #DC6D4E;
+	}
+	#footer1{
+		height:160px;
+		background-color:#fff3e3;
+	}
+	#footer1_text_max{
+		font-size:13px;
+		padding-left:200px;	
+	}
+	#footer1_text_min{
+		display: none;
+	}
+
+	#footer_title{
+		font-size:24px;
+		letter-spacing:3px;
+	}
+	#footer_content{
+		font-size:18px;
+		line-height:0.8;
+	}
+	#marquee_height{
+		height:400px;
+	}
+	#marquee1{
+		position:absolute;
+		z-index:-3;
+		left:0;
+		width:100%;
+	}
+	#marquee2{
+		position:absolute;
+		z-index:0;
+		padding-top:310px;
+		left:55%;
+	}
+	#marquee3{
+		position:absolute;
+		z-index:3;
+		padding-top:350px;
+		left:57%;
+	}
+	#marquee4{
+		position:absolute;
+		top:30px;
+		left:920px;
+		width:164px;
+		height:82px;
+	}	
+	#study_abroad_img{
+		width:30%;
+	}	
+	#study_abroad_min{
+		display: none;
+	}
+	#coures_order_min{
+		display: none;
+	}
+	#layer1_1{
+		position:absolute;
+		z-index:3;
+		left:0;
+		width:100%;
+	}
+	#layer1_2{
+		display: none;
+	}
+	#layer2_1{
+		opacity: 0.5;
+		position:absolute;
+		padding-top:50px;
+		z-index:1;
+		left:0;
+		width:100%;
+	}
+	#layer3_1{
+		position:absolute;
+		padding-top:150px;
+		z-index:-3;
+		left:0;
+		width:100%;
+	}
+	#login_index{
+		padding-top:3.8%;
+		padding-bottom:3.8%;
+		padding-left:30%;
+		padding-right:30%;
+	}
+	#cram_left_news{
+		position:absolute;
+		left:20%;
+		top:10%;
+	}
+	#top_text{
+		margin-top:50px;
+	}
+	#abroad_logo{
+		width:60%;
+		padding-left:200px;
+	}
+	#abroad_video{
+		padding-left:50px;
+		width:90%;
+		height:400px;
+	}
+	#cultural_content{
+		padding-left:40px;
+	}
+	#cultural_text{
+		line-height:30px;
+		padding-left:50px;
+	}
+	.abroad_text{
+		letter-spacing:10px;
+		line-height:30px;
+	}
+	#ml_4{
+		margin-left:60px;
+	}
+	#abroad_table{
+		width:500px;
+		margin-left:60px;
+	}
+	#abroad_room_img{
+		width:70%;
+	}
+	#course_audition_max{
+		padding-top:50px;
+		padding-bottom:50px;
+		padding-left:150px;
+		padding-right:150px;
+	}
+	#coures_select_max, #coures_select{
+		padding-left:150px;
+		padding-right:150px;
+	}
+	#exam_title{
+		margin-top:50px;
+	}
+	.min{
+		display: none;
+	}
+	.leavet_form{
+		padding-left:300px;
+		padding-right:300px;
+		padding-top:14px;
+		padding-bottom:100px;
+		display: none;
+	}
+	#backstage{
+		margin-left:300px;
+		margin-right:300px;
+		letter-spacing:3px;
+		line-height:30px;
+	}
+	#navbar_carmn{
+		margin-left:-40px;
+	}
+	#study_abroad_h-mahoroba_text{
+		line-height:40px;
+		margin-left:40px;
+	}
+	#study_abroad_h-mahoroba_context{
+		padding-top:430px;
+		padding-left:200px;
+	}
+	#study_abroad_h-mahoroba_title{
+		font-size:32px;
+		font-weight:bold;
+	}
+	#study_abroad_h-mahoroba_case{
+		padding-left:50px;
+	}
+	#study_abroad_h-mahoroba_remarks{
+		padding-left:40px;
+	}
+	#study_abroad_a-j-academy_context{
+		padding-left:100px;
+		padding-right:100px;
+	}
+	#study_abroad_FJIS_logo{
+		width:50%;
+	}
+}
+ 
+@media (min-width: 1600px) and (max-width: 2000px) { 
+
+/* 滑鼠移至navbar自動展開 */
+
+	#logiin2{
+		display: none;
+	}
+	#navbar{
+		padding-left:80px;
+	}
+	#main{
+		padding-left:300px;
+		padding-right:300px;
+		margin-top:640px;
+	}
+	#main_item{
+		padding-top:120px;
+		padding-left:150px;
+		padding-right:150px;
+	}	 
+	/* #footer0{ */
+		/* margin-top:139px; */
+	/* } */
+	#footer0_bg{
+		height:194px;
+		background-color:#F8E2DC;
+		border-bottom: 10px solid #DC6D4E;
+	}
+	#footer1{
+		height:160px;
+		background-color:#fff3e3;
+	}
+	#footer1_text_max{
+		font-size:13px;
+		padding-left:200px;	
+	}
+	#footer1_text_min{
+		display: none;
+	}
+	#footer_title{
+		font-size:24px;
+		letter-spacing:3px;
+	}
+	#footer_content{
+		font-size:18px;
+		line-height:0.8;
+	}
+	#marquee_height{
+		height:400px;
+	}
+	#marquee1{
+		position:absolute;
+		z-index:-3;
+		left:0;
+		width:100%;
+	}
+	#marquee2{
+		position:absolute;
+		z-index:0;
+		padding-top:310px;
+		left:55%;
+	}
+	#marquee3{
+		position:absolute;
+		z-index:3;
+		padding-top:350px;
+		left:57%;
+	}
+	#marquee4{
+		position:absolute;
+		top:30px;
+		left:920px;
+		width:164px;
+		height:82px;
+	}	
+	#study_abroad_img{
+		width:35%;
+	}	
+	#study_abroad_min{
+		display: none;
+	}
+	#coures_order_min{
+		display: none;
+	}	
+	#layer1_1{
+		position:absolute;
+		z-index:3;
+		left:0;
+		width:100%;
+	}
+	#layer1_2{
+		display: none;
+	}
+	#layer2_1{
+		opacity: 0.5;
+		position:absolute;
+		padding-top:50px;
+		z-index:1;
+		left:0;
+		width:100%;
+	}
+	#layer3_1{
+		position:absolute;
+		padding-top:150px;
+		z-index:-3;
+		left:0;
+		width:100%;
+	}
+	#login_index{
+		padding-top:13%;
+		padding-bottom:13.9%;
+		padding-left:30%;
+		padding-right:30%;
+	}
+	#cram_left_news{
+		position:absolute;
+		left:20%;
+		top:10%;
+	}
+	#footer1_logo{
+		padding-left:50px;
+		padding-bottom:20px;
+	}
+	#footer1_time{
+		border-left: 1px solid #730101;
+		height:70px;
+		letter-spacing:2px;
+		padding-left:30px;
+	}
+	#coures_select_max, #coures_select{
+		padding-left:300px;
+		padding-right:300px;
+	}
+	#top_text{
+		margin-top:50px;
+		padding-right:80px;
+	}
+	#abroad_logo{
+		width:60%;
+		padding-left:200px;
+	}
+	#abroad_video{
+		padding-left:50px;
+		width:80%;
+		height:400px;
+	}
+	#cultural_content{
+		padding-left:40px;
+	}
+	#cultural_text{
+		line-height:30px;
+		padding-left:50px;
+	}
+	.abroad_text{
+		letter-spacing:10px;
+		line-height:30px;
+	}
+	#ml_4{
+		margin-left:60px;
+	}
+	#abroad_FJLS_table1{
+		width:600px;
+		margin-left:35px;
+	}
+	#abroad_FJLS_table2{
+		width:620px;
+		margin-left:35px;
+	}
+	#abroad_room_img{
+		width:70%;
+	}
+	#course_audition_max{
+		padding-top:50px;
+		padding-bottom:50px;
+		padding-left:300px;
+		padding-right:300px;
+	}
+	#exam_title{
+		margin-top:50px;
+	}
+	.min{
+		display: none;
+	}
+	.leavet_form{
+		padding-left:300px;
+		padding-right:300px;
+		padding-top:14px;
+		padding-bottom:100px;
+		display: none;
+	}
+	#backstage{
+		margin-left:300px;
+		margin-right:300px;
+		letter-spacing:3px;
+		line-height:30px;
+	}
+	#navbar_carmn{
+		margin-left:-120px;
+	}
+	#study_abroad_h-mahoroba_text{
+		line-height:40px;
+		margin-left:40px;
+	}
+	#study_abroad_h-mahoroba_context{
+		padding-top:430px;
+		padding-left:200px;
+	}
+	#study_abroad_h-mahoroba_title{
+		font-size:32px;
+		font-weight:bold;
+	}
+	#study_abroad_h-mahoroba_case{
+		padding-left:50px;
+	}
+	#study_abroad_h-mahoroba_remarks{
+		padding-left:40px;
+	}
+	#study_abroad_a-j-academy_context{
+		padding-left:100px;
+		padding-right:100px;
+	}
+	#study_abroad_FJIS_logo{
+		width:50%;
+	}
+}
