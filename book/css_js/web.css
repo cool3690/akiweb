@@ -1,0 +1,308 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+	font-family:'Noto Sans TC','Microsoft YaHei';
+}
+
+/* cs1_left_meum ------------*/
+#list_in{
+	font-size:22px;
+	border:none;
+	font-weight:bold;
+}
+
+#list_in a{
+	color:#0066CC;
+}
+
+#list_out{
+	font-size:22px;
+	border:none;
+	font-weight:bold;
+}
+
+#list_out a{
+	color:#000000;
+}
+/* cs1_left_meum ------------*/
+
+/* 滑鼠移至項目後icon會水平翻轉 */
+#list_out:click > #icon{
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); 	/* IE 9 */
+	-moz-transform:rotate(-90deg); 	/* Firefox */
+	-webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-90deg); 	/* Opera */
+}
+/* cs1右下角裝飾用文字 */
+#cs1_content{
+	color:#000000;
+	line-height:36px;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 1000px) {
+	#text1{
+		border-left:3px solid #bebebe;
+		padding:30px 0px 10px 0px;
+		padding-left:40px;
+		border-left:3px solid #C4E1FF;
+	}	
+	.timeline-text{
+		margin-left:20px;
+		padding:10px;
+		background-color:#f4f4f4;
+		border-radius:.5rem;
+	}
+	.timeline-icon{
+		position:absolute;	
+		z-index:1;
+		margin-top:-40px;
+		padding-top:5px;
+		margin-left:-35px;
+		text-align:center;
+		width:80px;
+		height:45px;
+		background-color:#ECF5FF;
+		border-left:3px solid #C4E1FF;
+	}
+	#bicon{
+		display: none;
+	} 
+	#text3{
+		z-index:-1;
+		border-left:3px solid #C4E1FF;
+	}	
+	#footer_iso{
+		margin-top:30px;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1600px) { 
+	#text1{
+		padding:30px 0px 30px 0px;
+	}	
+	.timeline-text{
+		margin-left:20px;
+		padding:10px 20px 10px 20px;
+		background-color:#f4f4f4;
+		border-radius:.5rem;
+		line-height:36px;
+	}
+	.timeline-icon{
+		position:absolute;	
+		z-index:1;
+		margin-left:105px;
+		margin-top:-30px;
+		padding-top:5px;
+		text-align:center;
+		width:80px;
+		height:45px;
+		background-color:#ECF5FF;
+		border-left:3px solid #C4E1FF;
+	}	
+	#sicon{
+		display: none;
+	}
+	#text3{
+		z-index:-1;
+		border-left:3px solid #C4E1FF;
+		padding:30px 0px 30px 30px;
+	}	
+	#footer_iso{
+		margin-top:50px;
+	}
+}
+@media (min-width: 1600px) and (max-width: 2000px) { 
+	#text1{
+		padding:80px 0px 30px 0px;
+	}	
+	.timeline-text{
+		margin-left:20px;
+		padding:10px 20px 10px 20px;
+		background-color:#D29C1E;
+		border-radius:.5rem;
+		line-height:36px;
+		height:100px;
+		width:300px;
+	}
+	.timeline-icon{
+		position:absolute;	
+		z-index:2;
+		margin-left:25px;
+		
+		padding-top:5px;
+		text-align:center;
+		width:80px;
+		height:45px;
+		font-size:20px;
+		background-color:#BB3D00;
+		border-left:5px solid #842B00;
+	}	
+	#sicon{
+		display: none;
+	}
+	#text3{
+		z-index:1;
+		border-left:10px solid #000000;
+	}	
+	#footer_iso{
+		margin-top:50px;
+	}
+}
+
+/* CLSM_icon設定 */
+#clsm_icon{
+	color:#46a3ff;
+}
+
+#news_ds{
+	border-bottom:2px solid #004b97;
+}
+
+/* 右側消息：滑鼠移至消息列背景顏色綠色、文字白色、對應的圖片透明度0.5 */
+#p1_ds{ 
+	width: 340px;
+	height:350px;
+	background: -webkit-linear-gradient(315deg,#ffffff,#9d9d9d);
+	background: -o-linear-gradient(315deg,#ffffff,#9d9d9d);
+	background: -moz-linear-gradient(315deg,#ffffff,#9d9d9d);
+	background: linear-gradient(to 315deg,#ffffff,#9d9d9d);
+	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+
+/* 右側消息：滑鼠移至消息列背景顏色綠色、文字白色、對應的圖片透明度0.5 */
+#p1_ds2{ 
+	width: 340px;
+	height:340px;
+	background: -webkit-linear-gradient(315deg,#ffffff,#9d9d9d);
+	background: -o-linear-gradient(315deg,#ffffff,#9d9d9d);
+	background: -moz-linear-gradient(315deg,#ffffff,#9d9d9d);
+	background: linear-gradient(to 315deg,#ffffff,#9d9d9d);
+	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+@media (min-width: 0px) and (max-width: 991.98px) { 
+	/* index_right_news 間距及框線設定------------ */	
+	#myBtn2{
+		margin-left:2px;
+		margin-right:2px;
+		margin-bottom:10px;
+		border:2px #ccc solid;border-radius:50px;
+	}
+	#myBtn3{
+		margin-left:2px;
+		margin-right:2px;
+		margin-bottom:10px;
+		border:2px #ccc solid;border-radius:50px;
+	}
+	#myBtn4{
+		margin-left:2px;
+		margin-right:2px;
+		margin-bottom:10px;
+		border:2px #ccc solid;border-radius:50px;
+	}
+	#myBtn5{
+		margin-left:2px;
+		margin-right:2px;
+		border:2px #ccc solid;border-radius:50px;
+	}
+	/* index_right_news 間距及框線設定------------ */	
+	
+	/* index_right_news icon消失 */
+	#index_icon, #index_green, #carousel1{
+		display: none;
+	}
+	
+	/* index_right_news 文字 */
+	#index_new_p{
+		font-size:14px;		
+	}	
+	
+	/* index_footer文字大小 */
+	#footer_p, #footer_fan_p, #footer_p_copyright{
+		font-size:9px;		
+	}
+	
+	/* cs1右下角裝飾用文字 */
+	#cs1_decoration_color {
+		display: none;
+	}
+	
+	/* footer左邊間距20 */
+	footer{
+		padding-left:20px;
+	}
+	
+	/* footer_fans_icon大小 */
+	#footer_icon{
+		width:30px;
+	}
+	
+	/* cs1左側選單格式 */
+	#cs1_left_menu{
+		letter-spacing:5px;
+		line-height:50px;
+	}
+	#people_title{
+	  width:110%;
+	}
+}
+ 
+@media (min-width: 992px) and (max-width: 2000px) { 
+	/* index_left_news zindex_1 */
+	#new_img_title{
+		z-index:1;
+		position:absolute;
+	}
+	
+	/* index_left_news zindex_0 */
+	#new_img0{
+		z-index:0;
+		position:absolute;
+	}
+	
+	/* index_right_news 文字 */
+	#index_new_p{
+		font-size:13px;		
+	}	
+		
+	
+	/* cs1左側選單格式 */
+	#cs1_left_menu{
+		letter-spacing:5px;
+		line-height:50px;
+	}
+	
+	/* index_footer文字大小 */
+	#footer_p{
+		font-size:13px;
+	}
+	
+	/* index_footer_copyright文字大小 */
+	#footer_p_copyright{
+		font-size:13px;
+		text-align:right;
+	}
+	
+	/* index_right_news大小*/
+	#index_icon{
+		width:10px;
+	}
+	
+	/* cultural_icon大小*/
+	#cultural_icon{
+		width:10px;
+	}
+		
+	/* footer_fan_p大小 */
+	#footer_fan_p{
+		font-size:16px;		
+	}
+	
+	/* cs1_content左邊間距 */
+	#cs1_content{
+		margin-left:50px;
+	}
+	#people_title{
+	  width:60%;
+	}
+}

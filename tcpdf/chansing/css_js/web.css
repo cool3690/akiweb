@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+	font-family:'Noto Sans TC','Microsoft YaHei';
+}
+
+/*navbar*/
+.navbar {		
+	margin-bottom: 0;
+	border: 0;
+	font-size: 18px !important;
+	letter-spacing: 3px;
+	opacity:1;
+	font-weight:bold;
+ }
+ 
+/*navbar文字顏色*/ 
+#navbardrop{
+	color: #02324a; 	
+}
+ 
+/* 滑鼠移至navbar自動底線效果 */
+.navbar-dark .navbar-nav > .active > a:hover,
+.navbar-dark .navbar-nav > li > a:hover {
+	color: #ffffff !important;
+	background-color:#02324a;
+}
+
+/* 滑鼠移至navbar自動展開 */
+.dropdown:hover > .dropdown-menu {
+	display: block;
+	margin: 0; 
+	padding: 0;
+	border-radius: 0px 0px 0px 0px;
+}
+
+/* navbar展開效果 */
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    max-height: 200px;
+    opacity: 0.8;
+}
+
+.dropdown-menu > a{
+	text-align:center;
+	width:180px;
+    background-color:#02324a;
+	color:#ffffff !important; 
+	font-weight:bold;
+}
+
+/* 滑鼠移動到下拉式選單背景顏色、文字顏色效果 */
+.dropdown-menu > a:hover{
+    background-color:#D2E9FF;
+	color:#02324a !important;
+    opacity: 0.9;
+}
+.dropdown-item{
+	height:40px;
+	
+}
+#nav_c{
+	width:180px;
+	text-align:center;
+}
+/* navbar手機模式三槓設定  */
+.navbar-toggler{
+	background-color:#02324a;
+}
+
+/* 去超連結底線 */
+.container a{
+    text-decoration:none;	
+}
+
+/* 輪播 */
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+	margin-bottom:2%;
+}
+@media (min-width: 0px) and (max-width: 991.98px) { 
+	#logo{
+		width:30%;
+	}
+	/* 上方語言間距下方*/
+	#language_s{
+		margin-bottom:5px;
+	}
+	
+	/* 上方語言消失 */
+	#language_b, #logo_title{
+		display: none;
+	}	
+	
+	/* index_footer文字大小 */
+	#footer_p, #footer_fan_p, #footer_p_copyright{
+		font-size:12px;
+	}	
+	#index_news{
+		padding-left:20px;
+	}
+	#index_span3{
+		display: block;
+		padding-left: 0rem;
+	}	
+}
+ 
+@media (min-width: 992px) and (max-width: 2000px) { 
+	#logo{
+		width:50%;
+	}
+	#logo_title{
+		width:100%;
+	}
+	/* 上方語言消失 */
+	#language_s, .navbar2, #carousel2{
+		display: none;
+	}
+		
+	/* index_footer文字大小 */
+	#footer_p{
+		font-size:12px;
+	}
+	
+	/* index_footer_copyright文字大小 */
+	#footer_p_copyright{
+		font-size:10px;
+		text-align:right;
+	}
+	#index_news{
+		padding-left:100px;
+	}	
+	#index_span3{
+		display: block;
+		padding-left: 5rem;
+	}
+}
+#index_news_title{
+	font-size:26px;
+	color:#02324a;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding-top:20px;
+}
+#index_news_context{
+	padding-right:30px;
+	line-height:2.5;
+	letter-spacing:0.3px;
+	padding-bottom:20px;
+}
+.button_more{
+	font-size:12px;
+	background-color:#02324a;
+	float:right;
+	color:#ffffff;
+	padding-left:15px;
+	padding-right:15px;
+	line-height:1;
+	font-weight:bold;
+}
+#index_bottom{
+	border:2px solid #02324a;
+	background-color:#efefef;
+}
+#index_bottom_num{
+	text-align:center;
+	color:#ffffff;
+	background-color:#02324a;
+	width:20px;
+	float:left;
+	margin:12px 10px 0px 10px;
+}
+#index_bottom_title{
+	padding-top:10px;
+	float:center;
+	color:#02324a;
+	letter-spacing:2px;
+	font-size:20px;
+}
+#index_bottom_context{
+	font-size:12px;
+	padding-left:20px;
+}
